@@ -1,18 +1,14 @@
 import { Component } from '@angular/core';
-// import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { TodolistEnfantComponent } from './todolist-enfant/todolist-enfant.component'; 
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
-  imports: [FormsModule, TodolistEnfantComponent],
-
+  selector: 'app-todolist-enfant',
+  imports: [FormsModule],
+  templateUrl: './todolist-enfant.component.html',
+  styleUrl: './todolist-enfant.component.css'
 })
 
-
-export class AppComponent {
+export class TodolistEnfantComponent {
   title = 'ToDoList';
   task : string = ''
   tasks : string[] = [];
