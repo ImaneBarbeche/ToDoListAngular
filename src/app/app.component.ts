@@ -13,23 +13,4 @@ import { TodolistEnfantComponent } from './todolist-enfant/todolist-enfant.compo
 
 
 export class AppComponent {
-  title = 'ToDoList';
-  task : string = ''
-  tasks : string[] = [];
-  input: string = '';
-  index: number = 0;
-
-  addTask() {
-  
-    if(this.task)
-  this.tasks.push(this.task); 
-  this.task = '';
-  }
-  
-  deleteTask(index: number) {
-    this.tasks.splice(index, 1)
-  }
-  trackTask(index: number) {
-    return index;
-  }
 }
